@@ -79,10 +79,5 @@ Password into Keys and any key that is should be generated cryptographically ran
 * A08:2025 - Software or Data Integrity Failures 
 * A09:2025 - Logging \& Alerting Failures
 * A10:2025 - Mishandling of Exceptional Conditions
-
-
-
-
-
 &nbsp;
 
