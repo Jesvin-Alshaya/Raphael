@@ -8,4 +8,9 @@ Pass :*: cybersecuritycoursex
  
 📥 Dᴏᴡɴʟᴏᴀᴅ :*
  https://filetolink-82c-fcd36a08ade0.herokuapp.com/stream/671123?hash=772304&d=true
+
+https://www.packtpub.com/en-IN/product/practical-web-penetration-testing-9781788624039/chapter/building-a-vulnerable-web-application-lab-1/section/installing-mutillidae-on-windows-ch01lvl1sec03?srsltid=AfmBOopnq7g50S0pfLN1oVdUysxkJzYWPNDkRXczkrI1GWPdpbH7iyGH
+
+https://owasp.org/www-project-mutillidae-ii/
+
  
