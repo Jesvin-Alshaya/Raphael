@@ -1,0 +1,53 @@
+
+✅ Architecture Overview
+
+
+IoT Device (Attendance Collector)
+
+Captures attendance data (e.g., RFID, biometric).
+Sends data to the backend API securely.
+Uses OAuth 2.0 Client Credentials Flow to get an access token for API calls.
+Token could be JWT format for lightweight verification.
+
+
+
+UI (Web or Mobile App with RBAC)
+
+Users log in (Admin, Manager, Employee).
+Authentication handled via OAuth 2.0 Authorization Code Flow.
+After login, the Authorization Server issues:
+
+ID Token (JWT) → For user identity.
+Access Token (JWT) → For API calls.
+
+
+RBAC roles embedded in JWT claims (e.g., role: admin).
+
+
+
+Server (Backend API)
+
+Validates JWT tokens (signature, expiration, scopes).
+Applies RBAC logic based on claims in JWT.
+Stores attendance data from IoT device.
+Provides APIs for UI to fetch reports, manage users, etc.
+
+
+
+Authorization Server
+
+Issues tokens (Access, Refresh, ID).
+Handles MFA, SSO, and token revocation.
+Defines scopes like attendance.read, attendance.write.
+
+
+
+
+✅ Security Enhancements You Can Add
+
+MFA during login (via OAuth + OpenID Connect).
+SSO for employees (Google, Microsoft login).
+Token rotation & revocation for compromised accounts.
+Device Flow for IoT devices with limited UI.
+Audit logs for token usage.
+Conditional Access (e.g., require MFA if login from unknown device).
