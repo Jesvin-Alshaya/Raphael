@@ -13,5 +13,7 @@ https://www.packtpub.com/en-IN/product/practical-web-penetration-testing-9781788
 
 https://owasp.org/www-project-mutillidae-ii/
 
- SBOM - https://github.com/anchore/syft
-CVE scan ->https://trivy.dev/, https://github.com/anchore/grype, https://github.com/google/osv-scanner, https://pypi.org/project/safety/
+*** SBOM - https://github.com/anchore/syft
+*** CVE scan ->https://trivy.dev/, https://github.com/anchore/grype, https://github.com/google/osv-scanner, https://pypi.org/project/safety/
+
+***  DAST -> BurpSuite professional Scanner & Intrude, also OWASP ZAP ->https://www.zaproxy.org/ & OpenVAS ->https://github.com/greenbone/openvas-scanner
