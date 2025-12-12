@@ -113,9 +113,95 @@ Malicious payloads in JWT claims can lead to injection attacks if the applicatio
 If tokens don’t expire or lack proper revocation, attackers can reuse stolen tokens indefinitely.
 7.Timing Attacks
 Poor signature comparison (non-constant time) can leak information about the secret key.
-SSL handshake
+
+JWT With attacks
+Token replay -> attacks reuse the token
+Privilege escalation
+XSS theft
+session hijacking
+token injection ->
+
+3.Encryption vs hasing vs encoding vs salting
+⦁	Encrypting-> is process of transferring plain text to cipher text .
+⦁	Hashing-> is where the text is convert to hash text of fixed length and if a change has been that original value is never got
+⦁	Salting-> is process random text next to hash to stop rainbow table attacks
+⦁	Encoding ->  Converts data into a different format for compatibility or transmission, not for security. It’s reversible without a key—just knowledge of the encoding scheme.
+eg.Base64, ASCII, URL encoding.
+
 
 CORS
 is a browser security mechanism that allows controlled access to resources hosted on a different domain than the one serving the web page.
 GET POST HEAD
 No stand preflight to request to server from bowser
+
+12/10/25
+
+Security Headers
+X-Content-Type_Options
+used to ensure that file given is take as it is not second guessing work
+
+HSTS
+Http strict transport security
+ensuring all the communication is through the TLS
+
+CSP
+Content security Policy
+
+12/11/2025
+Burp Suite
+
+Headers
+⦁	Proxy:- Intercepts and analyzes the traffic betweenthe user and target applications, used to identifying the vulnerabilities
+⦁	Scanner-> Used to scan web application for common security issues
+⦁	Intruder -> used to perform automated attacks ob web application
+⦁	Repeater -> allows user to manually modify and resend request to test how application reacts with different inputs
+⦁	Decoder -> to understand the data encoding and decoding from the client and server
+⦁	Comparer -> Compare different sets of data or reponses to identify difference that many indicate security issues
+
+12/12/2025
+EDR layer for OSI
+siem  - Logging
+solar winds monitor memory allocation, ram and disk space  for DOS
+solar winds used to check whether firewall is working or not
+
+
+DOS - memory will full first pase
+virus first comes it comes repulicate itself  , multiple process starts
+
+firewall current version, firwall                      ssh telnet+
+sso autheication
+exchnage server -> mange mail and calender in our oprganistation
+radius server
+sCCm server - patch windows security patchs
+sc -> screen connect
+
+windows scan
+enable wmi and remote registry
+creditals need from pam
+creditial user linux
+infosec_va_wintel password from pam
+PAM vendor Beyondtrust
+PAM, or Privileged Access Management, is used to secure and manage access to critical systems and sensitive information. Its key functions include:
+
+
+add ip in the asset group
+ask for credentials
+ based on the error remove the ips
+
+SCCM -> System Center Configuration Manager
+
+Key Features of SCCM
+⦁	Software Deployment: SCCM allows for the remote installation and updating of software across multiple devices, streamlining the management process.
+⦁	Operating System Deployment: It can create and deploy operating system images, making it easier to manage OS updates and installations.
+⦁	Remote Control: IT administrators can remotely access devices to troubleshoot issues, enhancing support capabilities.'
+
+SSL handshake
+
+
+
+TSL handshake
+Process->
+1.	Client Hello message with protocol version + client random + a list of cipher suites.it also includes parameter that need to be used to calulate the parameter secrect.
+2.	server generate master secret based on server random
+3.	Serverhello sends the server certificate and digital signature and server random and chosen cipher suite and then send Finished message
+4.	then Client verifies everything from server and create s master scret  and  generate a finshed message
