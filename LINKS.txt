@@ -19,3 +19,8 @@ https://owasp.org/www-project-mutillidae-ii/
 ***  DAST -> BurpSuite professional Scanner & Intrude, also OWASP ZAP ->https://www.zaproxy.org/ & OpenVAS ->https://github.com/greenbone/openvas-scanner
 https://www.youtube.com/watch?v=eYX4fktYmzc
 
+geo restriction for ssh port
+whitelist ip
+sso intergration
+active directory
+not standard port
