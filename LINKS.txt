@@ -17,3 +17,5 @@ https://owasp.org/www-project-mutillidae-ii/
 *** CVE scan ->https://trivy.dev/, https://github.com/anchore/grype, https://github.com/google/osv-scanner, https://pypi.org/project/safety/
 
 ***  DAST -> BurpSuite professional Scanner & Intrude, also OWASP ZAP ->https://www.zaproxy.org/ & OpenVAS ->https://github.com/greenbone/openvas-scanner
+https://www.youtube.com/watch?v=eYX4fktYmzc
+
